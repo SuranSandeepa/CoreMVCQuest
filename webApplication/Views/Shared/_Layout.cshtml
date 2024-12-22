@@ -26,7 +26,13 @@
     </nav>
 
     <div class="container">
-        @RenderBody()
+        <div class="pb-3"
+        @RenderSection("title",false)
+        </div>
+
+        <div>
+            @RenderBody()
+        </div>
     </div>
 
 </body>
